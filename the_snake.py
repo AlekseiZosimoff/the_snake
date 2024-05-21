@@ -80,8 +80,8 @@ class Apple(GameObject):
     def __init__(self, occupied_cells=SCREEN_CENTER, body_color=APPLE_COLOR):
         self.occupied_cells = occupied_cells
         self.body_color = body_color
-        self.randomize_position() 
-        
+        self.randomize_position()
+
     def randomize_position(self):
         """Задание рандомной позиции яблоку."""
         while True:
