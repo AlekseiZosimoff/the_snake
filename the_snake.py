@@ -73,8 +73,7 @@ class GameObject:
                   border_color=BORDER_COLOR,
                   position=SCREEN_CENTER):
         """Отрисовка одной ячейки."""
-        x, y = position
-        rect = pygame.Rect((x, y), (GRID_SIZE, GRID_SIZE))
+        rect = pygame.Rect(position, (GRID_SIZE, GRID_SIZE))
         pygame.draw.rect(screen, cell_color, rect)
         pygame.draw.rect(screen, border_color, rect, 1)
 
